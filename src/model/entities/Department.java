@@ -2,13 +2,13 @@ package model.entities;
 
 import java.io.Serializable;
 
+// Na linguagem java nos temos que fazer o implements Serializable para que nosso objeto seja gravado em arquivo, trafegado em rede, etc.
 public class Department implements Serializable {
-
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
 	private String name;
-	
+
 	public Department() {
 	}
 
@@ -33,6 +33,8 @@ public class Department implements Serializable {
 		this.name = name;
 	}
 
+	// Precisamos do hashCode e equals para que os objetos possam ser comparados
+	// pelo conteúdo e não pela referência de ponteiros
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,8 +60,7 @@ public class Department implements Serializable {
 		return true;
 	}
 
-	@Override
 	public String toString() {
-		return "Department [id=" + id + ", name=" + name + "]";
+		return id + ", " + name;
 	}
 }

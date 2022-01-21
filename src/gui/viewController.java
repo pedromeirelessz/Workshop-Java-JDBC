@@ -83,6 +83,8 @@ public class viewController implements Initializable {
 			// Utilizo addAll para adicionar uma coleção
 			mainVBox.getChildren().addAll(newVBox.getChildren());
 
+			// Meu getController vai retornar um controlador do tipo que eu chamar na
+			// instaciação
 			T controller = loader.getController();
 			initializingAction.accept(controller);
 
