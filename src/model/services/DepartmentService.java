@@ -14,3 +14,4 @@ public class DepartmentService {
 		return dao.findAll();
 	}
 }
+ 
