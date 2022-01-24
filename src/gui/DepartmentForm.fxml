@@ -35,8 +35,8 @@
             <Label fx:id="labelError2" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAaction" text="Save" />
-                  <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAaction" text="Cancel" />
+                  <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" />
+                  <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel" />
                </children>
             </HBox>
          </children>

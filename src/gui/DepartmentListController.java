@@ -93,6 +93,7 @@ public class DepartmentListController implements Initializable {
 
 			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(deparment);
+			controller.setDepartmentService(new DepartmentService());
 			controller.updateFormData();
 
 			// Quando eu vou carregar uma janela de dialogo na frente da janela existente,
